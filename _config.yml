@@ -5,19 +5,19 @@ paginate: 6
 paginate_path: "page/:num"
 
 blog:
-    name:"JOE的博客"                                    # 博客名称
-    description:              # 博客描述
-    title: "IOS coder swift python 学习中..."                                         # 网页标题
-    url: "http://joezl.github.io/joeblog/"                                                 # 博客地址
-    duoshuo:                                             # 多说ID
-    tongji:                                              # 百度统计ID
-    qiniu:                                               # 七牛云地址
+    name:"JOE的博客"# 博客名称
+    description:# 博客描述
+    title: "IOS coder swift python 学习中..."# 网页标题
+    url: "http://joezl.github.io/joeblog/"# 博客地址
+    duoshuo:# 多说ID
+    tongji:# 百度统计ID
+    qiniu:# 七牛云地址
 author:
-    name: "Joe"                                            # 作者名称
-    email: "jiangzhili008@gmail.com"                                              # 邮箱地址
-    weibo:                                               # 微博地址
-    github:                                              # GitHub地址
-    logo:                                                # logo地址
+    name: "Joe"# 作者名称
+    email: "jiangzhili008@gmail.com"# 邮箱地址
+    weibo:# 微博地址
+    github:# GitHub地址
+    logo:# logo地址
     douban:
-        name:                                            # 豆瓣地址名称
-        key:                                             # 豆瓣API Key
+        name:# 豆瓣地址名称
+        key:# 豆瓣API Key
