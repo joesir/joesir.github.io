@@ -1,6 +1,3 @@
-# full var config
-source: "./"
-
 markdown: "kramdown"
 highlighter: "pygments"
 permalink: "blog/:year/:month/:day/:title.html"
