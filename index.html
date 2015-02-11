@@ -1,41 +1,48 @@
 ---
-layout: blog
-index: true
+layout: default
+title: "首页：Home"
 ---
-
+<h1 class="page-header">
+  <small>
+    {{ site.description }}
+  </small>
+</h1>
+<!-- Loop output paged posts -->
 {% for post in paginator.posts %}
-<div class="posts">
-  <section class="post">
-    <header class="post-header">
-      <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      <p class="post-meta">
-        <i class="fa fa-calendar"></i>
-        {{ post.date | date: "%Y" }}年{{ post.date | date: "%m" }}月{{ post.date | date: "%d" }}日
-        <i class="space"></i>
-        <i class="fa fa-tags"></i>
-        <a class="post-category" href="/page/category.html#{{ post.categories }}">{{ post.categories }}</a>
-      </p>
-    </header>
-    <div class="post-main">
-      {{ post.content | split:'<!-- more -->'| first }}
-      <div class="readall"><a href="{{ post.url }}" id="post-readall">阅读全文&nbsp;<i class="fa fa-chevron-right"></i></a></div>
-    </div>
-  </section>
-</div>
+<h2>
+  <a href="{{ post.url }}">
+    {{ post.title }}
+  </a> 
+  <div class="post-date">
+	<span class="glyphicon glyphicon-time"></span>
+	{{ post.date | date_to_string }}
+  </div>
+</h2>
+<hr>
+{{ post.excerpt }}
+	<p> <a href="{{ post.url }}"><span >阅读全文 &raquo; </span></a></p>
+<hr>
 {% endfor %}
-<div class="pagination">
-  {% if paginator.previous_page %}
-  {% if paginator.page == 2 %}
-  <a class="pagination-item newer" href="/"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;上一页</a>
+
+<!-- Pager indicator -->
+<ul class="pager">
+  {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
+  <li class="previous">
+    <a href="{{ site.url }}/">
+      &larr; Older
+    </a>
+  </li>
   {% else %}
-  <a class="pagination-item newer" href="/page/{{paginator.previous_page}}"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;上一页</a>
+  <li class="previous">
+    <a href="{{ site.url }}/page{{ paginator.previous_page }}">
+      &larr; Older
+    </a>
+  </li>
+  {% endif %} {% endif %} {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ site.url }}/page{{ paginator.next_page }}">
+      Newer &rarr;
+    </a>
+  </li>
   {% endif %}
-  {% else %}
-  <span class="pagination-item newer"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;上一页</span>
-  {% endif %}  
-  {% if paginator.next_page %}
-  <a class="pagination-item older" href="/page/{{paginator.next_page}}">下一页&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
-  {% else %}
-  <span class="pagination-item older">下一页&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></span>
-  {% endif %}
-</div>
+</ul>
