@@ -1,2 +1,0 @@
-# joeblog
-a coder blog
