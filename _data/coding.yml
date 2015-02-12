@@ -1,6 +1,6 @@
 ---
-layout: post
-category: "coding"
+layout: code
+category: "code"
 title: "IOS开发之推送服务"
 tags: [code,swift,objective-c,python]
 summary: "change the world start with coding"
