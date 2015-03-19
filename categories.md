@@ -1,5 +1,6 @@
 ---
 layout: default
+category: "code"
 title: "编码：code"
 ---
 <ul class="list-unstyled">
