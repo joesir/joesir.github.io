@@ -5,8 +5,6 @@ title: "被AppStore拒绝的往事"
 tags: [AppStore]
 summary: "被AppStore拒绝是常用的事,不要问我这坑有多深!_!"
 ---
-###提交AppStore被拒的那些理由
-
  **1. 内容中不能有iPhone/iPad等与苹果产品相关联的字样**
 >场景：应用关于页面使用webView获取了AppStore的更新日志，由于上一个版本适配了iPhone6及Plus。更新note自然写了标注，同时在应用的关于页面写会出现想关页面的提示。(记住也不能出现竞争者的提示例如: android哦)
 
