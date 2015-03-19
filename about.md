@@ -6,6 +6,6 @@ title: "关于：About"
 I'm Joe, A software developer on IOS, I'm living in Chengdu Si Chuan, China.
 
 ####Links
-GitHub: <https://github.com/{{ site.github }}>  
-Email: jiangzhili008@gmail.com 
-QQ: 330727684
+- GitHub: <https://github.com/{{ site.github }}>  
+- Email: jiangzhili008@gmail.com 
+- QQ: 330727684
