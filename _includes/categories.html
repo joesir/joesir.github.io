@@ -1,19 +1,20 @@
-              <div class="col-lg-6">
-                <ul class="list-unstyled">
+<div class="col-lg-6">
+    <ul class="list-unstyled">
+{% for cat in site.categories %} 
+  {% if cat[0] != 'blog' %} 
                   <li>
-                    <a href="/categories.html#reading">
-                      阅读
+                    <a href="/categories.html#{{ cat[0] }}">
+                      {{ cat[0] }}
                     </a>
-                  </li>
-                  <li>
-                    <a href="/categories.html#coding">
-                      开发笔记
-                    </a>
-                  </li>                  
-                </ul>
-              </div>
+                  </li>                                       
+   {% endif %} 
+{% endfor %} 
+    </ul>
+</div>
+
+            
               <!-- /.col-lg-6 -->
-              <div class="col-lg-6">
+         <!--      <div class="col-lg-6">
                 <ul class="list-unstyled">
                   <li>
                     <a href="/categories.html#java">
@@ -26,5 +27,5 @@
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
               <!-- /.col-lg-6 -->
