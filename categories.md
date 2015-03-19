@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "分类：Categories"
+category: "code"
+title: "编码：code"
 ---
 <ul class="list-unstyled">
 {% for cat in site.categories %} 
