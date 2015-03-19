@@ -3,7 +3,7 @@ layout: post
 category: "iTunes"
 title: "被AppStore拒绝的往事"
 tags: [AppStore]
-summary: "有多少坑等你去踩"
+summary: "被AppStore拒绝是常用的事,不要问我这坑有多深!_!"
 ---
 ###提交AppStore被拒的那些理由
 
