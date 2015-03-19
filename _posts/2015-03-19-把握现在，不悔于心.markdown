@@ -1,6 +1,6 @@
 ---
 layout: post
-category: life
+category: "life"
 title:  "把握现在，不悔于心"
 tags: [人生]
 summary: "在对的时间，做正确的事"
